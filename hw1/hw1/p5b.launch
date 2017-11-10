@@ -1,0 +1,12 @@
+<!-- Launch the framework code for problem 5b on HW1 -->
+<launch>
+  <include file="$(find foundations_hw1)/launch/default.launch"/>
+  <node name="turtle1" pkg="hw1" type="p5b.py">
+  <param name="location" type="double" value="-2.7" />
+  <param name="turtlename" type="string" value="t1" />
+  </node>
+  <node name="turtle2" pkg="hw1" type="p5b.py">
+  <param name="location" type="double" value="2.7" />
+  <param name="turtlename" type="string" value="t2" />
+  </node>
+</launch>

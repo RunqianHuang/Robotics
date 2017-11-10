@@ -1,0 +1,16 @@
+(a) The default topics are /rosout and /rosout_agg. /rosout is for publishing logging messages, and /rosout_agg is an aggregated feed of messages published to /rosout.
+
+(b) Run rosrun turtlesim turtlesim_node. Topics /turtle1/cmd_vel, /turtle1/color_sensor, /turtle1/pose were added. (turtle1 is the name of default turtle)
+/turtle1/cmd_vel contains the command of linear and angular movement for the turtle;
+/turtle1/color_sensor contains the color of the turtle;
+/turtle1/pose contains the posture and position of the turtle.
+
+(c) The message type of /turtle1/cmd_vel is geometry_msgs/Twist, which contains the values of linear and angular movement commands of x, y ,z axises.
+    The message type of /turtle1/pose is turtlesim/Pose, which contains the values of positions of the turtle of x, y, z axises and the linear and angular pose of the turtle.
+    
+(d) There are one subscriber and one publisher for /turtle1/cmd_vel. And there are one publisher and no subscriber for /turtle1/pose.
+
+(e) The available services includes /clear, /kill, /reset, /rosout/get_loggers, /rosout/set_logger_level, /spawn, /turtle1/set_pen, /turtle1/teleport_absolute, /turtle1/teleport_relative, /turtlesim/get_loggers, /turtlesim/set_loggers_level.
+I would use /turtle1/spawn to move the first turtle instantly to a set of coordinates.
+
+(f) I would use " Rosservice find geometry_msgs/Twist" to find all services which use a geometry_msgs/Twist type.

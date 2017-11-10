@@ -1,0 +1,36 @@
+<!-- Launch the framework code for problem 5a on HW1 -->
+<launch>
+  <include file="$(find foundations_hw1)/launch/default.launch"/>
+  <node name="turtle1" pkg="hw1" type="p5a.py">
+  <param name="location" type="int" value="0" />
+  <param name="turtlename" type="string" value="t1" />
+  </node>
+  <node name="turtle2" pkg="hw1" type="p5a.py">
+  <param name="location" type="int" value="1" />
+  <param name="turtlename" type="string" value="t2" />
+  </node>
+  <node name="turtle3" pkg="hw1" type="p5a.py">
+  <param name="location" type="int" value="2" />
+  <param name="turtlename" type="string" value="t3" />
+  </node>
+  <node name="turtle4" pkg="hw1" type="p5a.py">
+  <param name="location" type="int" value="3" />
+  <param name="turtlename" type="string" value="t4" />
+  </node>
+  <node name="turtle5" pkg="hw1" type="p5a.py">
+  <param name="location" type="int" value="4" />
+  <param name="turtlename" type="string" value="t5" />
+  </node>
+  <node name="turtle6" pkg="hw1" type="p5a.py">
+  <param name="location" type="int" value="5" />
+  <param name="turtlename" type="string" value="t6" />
+  </node>
+  <node name="turtle7" pkg="hw1" type="p5a.py">
+  <param name="location" type="int" value="6" />
+  <param name="turtlename" type="string" value="t7" />
+  </node>
+  <node name="turtle8" pkg="hw1" type="p5a.py">
+  <param name="location" type="int" value="7" />
+  <param name="turtlename" type="string" value="t8" />
+  </node>
+</launch>
